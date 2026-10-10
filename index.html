@@ -1,0 +1,2313 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliya | Sales Advisor PROTON Malaysia – Harga & Ansuran Kereta</title>
+    <meta name="description" content="Kenali model kereta PROTON, semak harga dan varian serta kira anggaran ansuran bulanan bersama Aliya, Sales Advisor PROTON.">
+    <meta name="theme-color" content="#0F2C59">
+    <link rel="canonical" href="https://aliya-proton.my/">
+
+    <!-- Favicon (Ganti favicon.ico dengan nama fail ikon anda) -->
+    <link rel="icon" href="Aliyah.png" type="image/png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Aliya | Sales Advisor PROTON Malaysia">
+    <meta property="og:description" content="Dapatkan panduan pembelian, semakan harga rasmi & anggaran ansuran kereta PROTON daripada Sales Advisor sah.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aliya-proton.my/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aliya",
+      "jobTitle": "Sales Advisor PROTON",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "PROTON"
+      },
+      "areaServed": "Malaysia",
+      "knowsLanguage": ["Malay", "English"]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #0A192F;
+            --primary-dark: #020C1B;
+            --proton-blue: #0066FF;
+            --proton-blue-hover: #0052CC;
+            --accent: #38BDF8;
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --bg-light: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --success: #10B981;
+            --radius-sm: 12px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --shadow-subtle: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+            --shadow-card: 0 20px 40px -15px rgba(0, 102, 255, 0.08);
+            --shadow-hover: 0 30px 60px -15px rgba(0, 102, 255, 0.18);
+            --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.625rem;
+            padding: 0.875rem 1.75rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--proton-blue) 0%, #0043B8 100%);
+            color: white;
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 102, 255, 0.45);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #1EBE5D 100%);
+            color: white;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--border-color);
+            color: var(--primary);
+            background: white;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--proton-blue);
+            color: var(--proton-blue);
+            background-color: rgba(0, 102, 255, 0.02);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+            padding: 0.25rem 0;
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.875rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 46px;
+            height: 46px;
+            background: linear-gradient(135deg, var(--proton-blue) 0%, var(--primary) 100%);
+            color: white;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.25rem;
+            box-shadow: 0 6px 15px rgba(0, 102, 255, 0.25);
+        }
+
+        .logo-text h1 {
+            font-size: 1.2rem;
+            line-height: 1.1;
+            color: var(--primary);
+        }
+
+        .logo-text span {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.25rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--proton-blue);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .nav-links a:hover {
+            color: var(--proton-blue);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--primary);
+            margin: 6px 0;
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .hero {
+            padding-top: calc(80px + 5rem);
+            padding-bottom: 7rem;
+            background: linear-gradient(135deg, #06193E 0%, #030B1E 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 60%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(0, 102, 255, 0.25) 0%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.625rem;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.75rem;
+            color: #60A5FA;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+            line-height: 1.12;
+            color: white;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .hero-content p {
+            font-size: 1.15rem;
+            color: #94A3B8;
+            margin-bottom: 2.5rem;
+            max-width: 580px;
+            line-height: 1.8;
+        }
+
+        .hero-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .hero-feature-item {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            backdrop-filter: blur(8px);
+            transition: var(--transition);
+        }
+
+        .hero-feature-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(96, 165, 250, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .hero-feature-item svg {
+            color: #38BDF8;
+            flex-shrink: 0;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 1.25rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-note {
+            display: block;
+            margin-top: 1.25rem;
+            font-size: 0.85rem;
+            color: #64748B;
+            font-style: italic;
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .car-mockup-container {
+            position: relative;
+            width: 100%;
+            max-width: 640px;
+            overflow: hidden;
+            animation: floatCar 5s ease-in-out infinite;
+            background: transparent;
+        }
+
+        .car-mockup-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transform: scale(1.02);
+            transition: transform 0.6s ease;
+        }
+
+        .car-mockup-container:hover img {
+            transform: scale(1.06);
+        }
+
+        @keyframes floatCar {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        .car-tag-badge {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            background: rgba(6, 25, 62, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius-sm);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+        }
+
+        .car-tag-badge h4 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 0.1rem;
+        }
+
+        .car-tag-badge p {
+            font-size: 0.75rem;
+            color: #93C5FD;
+            margin: 0;
+        }
+
+        .trust-bar {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 2.5rem 0;
+            box-shadow: var(--shadow-subtle);
+            position: relative;
+            z-index: 10;
+            margin-top: -2rem;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .trust-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(0, 102, 255, 0.08);
+            color: var(--proton-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .trust-item:hover .trust-icon {
+            background: var(--proton-blue);
+            color: white;
+            transform: scale(1.08);
+        }
+
+        .trust-text h3 {
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+            color: var(--primary);
+        }
+
+        .trust-text p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 3vw, 2.75rem);
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-tab {
+            background: white;
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1.75rem;
+            border-radius: 50px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .filter-tab.active, .filter-tab:hover {
+            background: var(--proton-blue);
+            border-color: var(--proton-blue);
+            color: white;
+            box-shadow: 0 8px 20px rgba(0, 102, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .model-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .model-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(0, 102, 255, 0.3);
+        }
+
+        .model-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            background: #F1F5F9;
+            overflow: hidden;
+        }
+
+        .model-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .model-card:hover .model-image-wrapper img {
+            transform: scale(1.08);
+        }
+
+        .model-badge-tag {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(10, 25, 47, 0.8);
+            backdrop-filter: blur(8px);
+            color: white;
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .model-body {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .model-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .model-title-row h3 {
+            font-size: 1.35rem;
+            color: var(--primary);
+        }
+
+        .model-price {
+            text-align: right;
+        }
+
+        .model-price span {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .model-price strong {
+            font-size: 1.15rem;
+            color: var(--proton-blue);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .model-features-list {
+            list-style: none;
+            margin: 1.25rem 0;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .model-features-list li {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .model-features-list li svg {
+            color: var(--success);
+            flex-shrink: 0;
+        }
+
+        .installment-preview {
+            background: rgba(0, 102, 255, 0.04);
+            border: 1px dashed rgba(0, 102, 255, 0.2);
+            padding: 0.85rem 1rem;
+            border-radius: var(--radius-sm);
+            margin: 1rem 0 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .installment-preview span {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .installment-preview strong {
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .model-card-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-top: auto;
+        }
+
+        .comparison-section {
+            background: white;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-card);
+            background: white;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+            white-space: nowrap;
+        }
+
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            padding: 1.25rem 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .comparison-table td {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-dark);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:hover td {
+            background-color: rgba(0, 102, 255, 0.02);
+        }
+
+        .calculator-wrapper {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 2.5rem;
+            background: white;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-card);
+            padding: 3rem;
+        }
+
+        .calc-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .calc-form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .calc-form-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .calc-form-group input, .calc-form-group select {
+            padding: 0.875rem 1.25rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-color);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            background: #F8FAFC;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .calc-form-group input:focus, .calc-form-group select:focus {
+            border-color: var(--proton-blue);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.12);
+        }
+
+        .calc-results-box {
+            background: linear-gradient(135deg, var(--primary) 0%, #030B1E 100%);
+            color: white;
+            border-radius: var(--radius-md);
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .calc-results-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(0, 102, 255, 0.3) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .calc-result-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.25rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .calc-result-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .calc-result-item span {
+            font-size: 0.85rem;
+            color: #93C5FD;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .calc-result-item strong {
+            font-size: 1.75rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: white;
+            letter-spacing: -0.02em;
+        }
+
+        .health-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.6rem;
+        }
+
+        .health-good { background: #10B981; color: white; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3); }
+        .health-warning { background: #F59E0B; color: white; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3); }
+        .health-danger { background: #EF4444; color: white; box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3); }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image-card {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            background: #E2E8F0;
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .about-image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .about-image-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-content h3 {
+            font-size: 2.1rem;
+            margin-bottom: 1.25rem;
+            color: var(--primary);
+        }
+
+        .about-content p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .about-services {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .about-services li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .about-services svg {
+            color: var(--proton-blue);
+            background: rgba(0, 102, 255, 0.1);
+            padding: 4px;
+            border-radius: 6px;
+            width: 26px;
+            height: 26px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .step-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-subtle);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .step-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-card);
+            border-color: rgba(0, 102, 255, 0.3);
+        }
+
+        .step-number {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--proton-blue) 0%, #0043B8 100%);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 102, 255, 0.25);
+        }
+
+        .step-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+
+        .step-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .enquiry-container {
+            background: white;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-card);
+            padding: 3.5rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .form-section-title {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 0;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1.25rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-color);
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            background: #F8FAFC;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            border-color: var(--proton-blue);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.12);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .checkbox-group input {
+            width: 18px;
+            height: 18px;
+            margin-top: 0.15rem;
+            accent-color: var(--proton-blue);
+            cursor: pointer;
+        }
+
+        .faq-accordion {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            margin-bottom: 1.25rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition);
+        }
+
+        .faq-item.active {
+            border-color: var(--proton-blue);
+            box-shadow: var(--shadow-card);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem;
+            background: none;
+            border: none;
+            text-align: left;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            color: var(--proton-blue);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+            color: var(--proton-blue);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+            padding: 0 1.5rem;
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding-bottom: 1.5rem;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(6, 25, 62, 0.75);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            padding: 1.5rem;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            width: 100%;
+            max-width: 680px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 2.5rem;
+            position: relative;
+            transform: translateY(30px) scale(0.98);
+            transition: var(--transition);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-overlay.active .modal-card {
+            transform: translateY(0) scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: var(--bg-light);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .modal-close:hover {
+            background: var(--proton-blue);
+            color: white;
+        }
+
+        footer {
+            background: var(--primary-dark);
+            color: #94A3B8;
+            padding: 5rem 0 2.5rem 0;
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-brand p {
+            margin-top: 1.25rem;
+            color: #94A3B8;
+            max-width: 420px;
+            line-height: 1.8;
+        }
+
+        .footer-links h4 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.85rem;
+        }
+
+        .footer-links a {
+            color: #94A3B8;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 4px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        /* Floating Controls */
+        .floating-controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .float-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            border: none;
+        }
+
+        .float-whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #1EBE5D 100%);
+            color: white;
+        }
+
+        .float-whatsapp:hover {
+            transform: scale(1.12);
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        .float-top {
+            background: var(--primary);
+            color: white;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+        }
+
+        .float-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .float-top:hover {
+            background: var(--proton-blue);
+            transform: scale(1.12);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .hero-grid, .calculator-wrapper, .about-grid, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .trust-grid, .steps-grid, .models-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .trust-grid, .steps-grid, .models-grid, .form-grid, .about-services {
+                grid-template-columns: 1fr;
+            }
+            .enquiry-container, .calculator-wrapper {
+                padding: 2rem 1.5rem;
+            }
+            .container {
+                padding: 0 1.25rem;
+            }
+            /* Sembunyikan butang WhatsApp atas pada mobile */
+            #header-wa-btn {
+                display: none !important;
+            }
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            transform: translateY(-120%);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            transform: translateY(0);
+        }
+
+        .mobile-menu a {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary);
+            text-decoration: none;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--bg-light);
+            transition: var(--transition);
+        }
+
+        .mobile-menu a:hover {
+            color: var(--proton-blue);
+            padding-left: 8px;
+        }
+
+        /* Gerakkan menu navigasi ke kanan sedikit */
+        header nav {
+            margin-left: auto;
+            margin-right: 2rem;
+        }
+
+        /* Kecilkan sedikit saiz butang Hubungi Aliya di desktop */
+        #header-wa-btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+        }
+
+        #header-wa-btn svg {
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo-wrapper" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                <img src="Proton-Logo.png" alt="Logo Perodua" style="height: 50px; width: auto; object-fit: contain;">
+                <div class="logo-text">
+                    <h1>PROTON</h1>
+                    <span>Authorized Sales Advisor • Aliya</span>
+                </div>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Utama</a></li>
+                    <li><a href="#models">Model Kereta</a></li>
+                    <!--- <li><a href="#compare">Perbandingan</a></li> --->
+                    <!--- <li><a href="#calculator">Kalkulator</a></li> --->
+                    <!--- <li><a href="#promotion">Promosi</a></li> --->
+                    <li><a href="#about-aliya">Tentang Aliya</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="https://wa.me/60123456789?text=Assalamualaikum%20Aliya,%20saya%20berminat%20nak%20tanya%20tentang%20kereta%20PROTON." id="header-wa-btn" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Hubungi Aliya
+                </a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#hero" class="mobile-link">Utama</a>
+        <a href="#models" class="mobile-link">Model Kereta</a>
+        <!--- <a href="#compare" class="mobile-link">Perbandingan</a> --->
+        <!--- <a href="#calculator" class="mobile-link">Kalkulator</a> --->
+        <!--- <a href="#promotion" class="mobile-link">Promosi</a> --->
+        <a href="#about-aliya" class="mobile-link">Tentang Aliya</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
+
+        <a href="https://wa.me/60123456789?text=Assalamualaikum%20Aliya,%20saya%20berminat%20nak%20tanya%20tentang%20kereta%20PROTON." class="btn btn-whatsapp" target="_blank" rel="noopener" style="margin-top: 1rem; width: 100%; justify-content: center;">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Hubungi Aliya
+        </a>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">PROTON | Your Next Drive Starts Here</div>
+                <h1>Sedang Cari Kereta PROTON Yang Sesuai Dengan Bajet Anda?</h1>
+                <p>“Kenali pilihan model PROTON, semak anggaran bayaran bulanan dan dapatkan panduan pembelian secara peribadi daripada Aliya.”</p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        Pilihan Mengikut Bajet
+                    </div>
+                    <div class="hero-feature-item">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        Anggaran Ansuran
+                    </div>
+                    <div class="hero-feature-item">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        Panduan Peribadi
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#models" class="btn btn-primary">Semak Pilihan Kereta</a>
+                    <a href="https://wa.me/60123456789?text=Assalamualaikum%20Aliya,%20saya%20nak%20tanya%20pakej%20dan%20harga%20terkini." class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp Aliya</a>
+                </div>
+                <span class="hero-note">“Pertanyaan anda akan dibantu secara langsung oleh Aliya, Sales Advisor PROTON.”</span>
+            </div>
+
+            <div class="hero-visual">
+                <div class="car-mockup-container">
+                    <!-- Real-world high quality image representing Proton S70 Blue -->
+                    <img src="s70.png" alt="PROTON S70 Biru Modern" loading="eager">
+                    <div class="car-tag-badge">
+                        <h4>PROTON S70</h4>
+                        <p>Sedan Moden • Prestasi Premium</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust-bar">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                </div>
+                <div class="trust-text">
+                    <h3>Pilihan Model PROTON</h3>
+                    <p>Barisan lengkap sedan & SUV</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div class="trust-text">
+                    <h3>Panduan Ikut Bajet</h3>
+                    <p>Sesuaikan kemampuan kewangan</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                </div>
+                <div class="trust-text">
+                    <h3>Anggaran Pembiayaan</h3>
+                    <p>Kira ansuran secara telus</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                </div>
+                <div class="trust-text">
+                    <h3>Hubungan Terus</h3>
+                    <p>Konsultasi percuma bersama Aliya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="models">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kenali Barisan Model PROTON</h2>
+                <p>Bandingkan pilihan model, ciri utama dan anggaran harga untuk mencari kereta yang sesuai dengan keperluan anda.</p>
+            </div>
+
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Semua Model</button>
+                <button class="filter-tab" data-filter="sedan">Sedan</button>
+                <button class="filter-tab" data-filter="suv">SUV</button>
+            </div>
+
+            <div class="models-grid" id="models-container">
+                <!-- JavaScript will populate model cards dynamically for maintainability -->
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section" id="compare">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bandingkan Sebelum Membuat Pilihan</h2>
+                <p>Analisis ringkas spesifikasi utama model PROTON untuk rujukan pantas anda.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="comparison-table" id="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Kategori</th>
+                            <th>Harga Bermula</th>
+                            <th>Tempat Duduk</th>
+                            <th>Transmisi / Enjin</th>
+                            <th>Anggaran Ansuran</th>
+                            <th>Tindakan</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparison-tbody">
+                        <!-- Populated via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2>Berapa Harga Kereta Yang Sesuai Dengan Bajet Anda?</h2>
+                <p>Masukkan maklumat pendapatan dan komitmen bulanan untuk mendapatkan gambaran awal kemampuan pembayaran kereta.</p>
+            </div>
+
+            <div class="calculator-wrapper">
+                <div class="calc-form">
+                    <div class="calc-form-group">
+                        <label for="calc-model">Pilih Model Kereta</label>
+                        <select id="calc-model">
+                            <!-- Populated by JS -->
+                        </select>
+                    </div>
+
+                    <div class="calc-form-group">
+                        <label for="calc-salary">Gaji Bersih Bulanan (RM)</label>
+                        <input type="number" id="calc-salary" value="3500" min="1500" step="100">
+                    </div>
+
+                    <div class="calc-form-group">
+                        <label for="calc-commitment">Komitmen Hutang Semasa Bulanan (RM) [cth: PTPTN, Personal Loan, Kad Kredit]</label>
+                        <input type="number" id="calc-commitment" value="500" min="0" step="50">
+                    </div>
+
+                    <div class="calc-form-group">
+                        <label for="calc-deposit">Wang Pendahuluan / Deposit (RM)</label>
+                        <input type="number" id="calc-deposit" value="2000" min="0" step="500">
+                    </div>
+
+                    <div class="calc-form-group">
+                        <label for="calc-tenure">Tempoh Pembiayaan (Tahun)</label>
+                        <select id="calc-tenure">
+                            <option value="5">5 Tahun (60 Bulan)</option>
+                            <option value="7">7 Tahun (84 Bulan)</option>
+                            <option value="9" selected>9 Tahun (108 Bulan)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-form-group">
+                        <label for="calc-rate">Kadar Faedah Indikatif (%)</label>
+                        <input type="number" id="calc-rate" value="3.2" min="2.0" max="6.0" step="0.1">
+                    </div>
+                </div>
+
+                <div class="calc-results-box">
+                    <div>
+                        <h3 style="color: white; margin-bottom: 1.5rem; font-size: 1.25rem;">Simulasi Kemampuan Kewangan</h3>
+                        
+                        <div class="calc-result-item">
+                            <span>Anggaran Ansuran Bulanan</span>
+                            <strong id="res-installment">RM 0</strong>
+                        </div>
+
+                        <div class="calc-result-item">
+                            <span>Baki Gaji Selepas Komitmen & Ansuran</span>
+                            <strong id="res-balance">RM 0</strong>
+                        </div>
+
+                        <div class="calc-result-item">
+                            <span>Nisbah Khidmat Hutang (DSR)</span>
+                            <div>
+                                <strong id="res-dsr">0%</strong>
+                                <div id="res-health-container"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <p style="font-size: 0.75rem; color: #94A3B8; margin-bottom: 1rem;">
+                            *Simulasi ini adalah anggaran perancangan awal dan bukan jaminan kelulusan pinjaman bank.
+                        </p>
+                        <button class="btn btn-whatsapp" id="calc-whatsapp-btn" style="width: 100%;">
+                            Tanya Aliya Tentang Pengiraan Ini
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="promotion" style="background: white; border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Semak Promosi PROTON Terkini</h2>
+                <p>Dapatkan maklumat rebat, pakej servis percuma atau tawaran sah untuk model pilihan anda.</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto; background: var(--bg-light); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 2rem; text-align: center;">
+                <h3 style="color: var(--primary); margin-bottom: 0.75rem;">Nak Tahu Tawaran & Rebate Untuk Model Pilihan Anda?</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                    Promosi bulanan PROTON sentiasa dikemas kini mengikut model. Hubungi Aliya untuk mendapatkan kepastian tawaran terbaharu sebelum membuat tempahan.
+                </p>
+                <a href="https://wa.me/60123456789?text=Assalamualaikum%20Aliya,%20saya%20nak%20tahu%20promosi%20terkini%20untuk%20model%20PROTON." class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    Semak Promosi Dengan Aliya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-aliya">
+        <div class="container about-grid">
+            <div class="about-image-card">
+                <img src="Aliya.jpeg" alt="Aliya - Sales Advisor PROTON" loading="lazy">
+            </div>
+            <div class="about-content">
+                <div class="hero-badge" style="background: rgba(0, 71, 171, 0.1); color: var(--proton-blue); border-color: rgba(0, 71, 171, 0.2);">Sales Advisor Sah</div>
+                <h3>Kenali Aliya, Sales Advisor PROTON Anda</h3>
+                <p>
+                    “Memilih kereta bukan sekadar melihat harga. Anda juga perlu memahami perbezaan model, varian, anggaran ansuran dan kos pemilikan. Aliya sedia membantu anda mendapatkan maklumat yang diperlukan supaya anda boleh membuat pilihan berdasarkan keperluan dan bajet sendiri.”
+                </p>
+
+                <ul class="about-services">
+                    <li>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        Penerangan model & varian
+                    </li>
+                    <li>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        Pertanyaan sebut harga rasmi
+                    </li>
+                    <li>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        Anggaran ansuran terperinci
+                    </li>
+                    <li>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        Panduan langkah pembelian
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/60123456789?text=Assalamualaikum%20Aliya,%20saya%20ingin%20berbincang%20tentang%20pembelian%20kereta%20PROTON." class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    Berbincang Dengan Aliya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: white; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bagaimana Proses Pembelian Kereta Bermula?</h2>
+                <p>Empat langkah mudah untuk mendapatkan kereta PROTON idaman anda bersama Aliya.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4>Pilih Model</h4>
+                    <p>Kenal pasti model dan varian yang sepadan dengan keperluan serta bajet anda.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4>Hantar Pertanyaan</h4>
+                    <p>Lengkapkan borang atau hubungi Aliya secara terus melalui WhatsApp untuk maklumat awal.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4>Semak Sebut Harga</h4>
+                    <p>Dapatkan butiran harga, anggaran bayaran bulanan dan maklumat dokumen yang diperlukan.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h4>Teruskan Proses</h4>
+                    <p>Bincangkan proses penyerahan dokumen dan langkah seterusnya bersama Aliya dengan selesa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="enquiry">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dapatkan Maklumat Kereta Pilihan Anda</h2>
+                <p>Isi maklumat ringkas di bawah supaya Aliya dapat memahami keperluan anda dan membantu dengan pertanyaan yang sesuai.</p>
+            </div>
+
+            <div class="enquiry-container">
+                <form id="enquiry-form">
+                    <div class="form-section-title">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                        Bahagian A — Maklumat Peribadi
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="eq-name">Nama Penuh *</label>
+                            <input type="text" id="eq-name" required placeholder="Cth: Ahmad bin Ali">
+                        </div>
+                        <div class="form-group">
+                            <label for="eq-phone">Nombor Telefon (WhatsApp) *</label>
+                            <input type="tel" id="eq-phone" required placeholder="Cth: 0123456789">
+                        </div>
+                    </div>
+
+                    <div class="form-section-title">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        Bahagian B — Pilihan Kereta & Bajet
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="eq-model">Model PROTON Pilihan *</label>
+                            <select id="eq-model" required>
+                                <!-- Populated by JS -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="eq-employment">Status Pekerjaan</label>
+                            <select id="eq-employment">
+                                <option value="Makan Gaji">Makan Gaji (Kerajaan / Swasta)</option>
+                                <option value="Bekerja Sendiri">Bekerja Sendiri</option>
+                                <option value="Pemilik Perniagaan">Pemilik Perniagaan</option>
+                                <option value="Lain-lain">Lain-lain</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="eq-salary">Anggaran Gaji Bersih Bulanan (RM)</label>
+                            <input type="number" id="eq-salary" placeholder="Cth: 3500">
+                        </div>
+                        <div class="form-group">
+                            <label for="eq-inquiry-type">Jenis Pertanyaan Utama</label>
+                            <select id="eq-inquiry-type">
+                                <option value="Harga dan Varian">Harga dan Varian</option>
+                                <option value="Anggaran Ansuran">Anggaran Ansuran</option>
+                                <option value="Promosi Semasa">Promosi Semasa</option>
+                                <option value="Test Drive">Temujanji Test Drive</option>
+                                <option value="Proses Pembelian">Proses Pembelian</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="eq-message">Mesej Tambahan / Pertanyaan Khusus</label>
+                            <textarea id="eq-message" rows="3" placeholder="Nyatakan sebarang pertanyaan lanjut..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="eq-consent" required>
+                        <label for="eq-consent">Saya bersetuju maklumat ini diberikan secara sukarela untuk membolehkan Aliya menghubungi saya melalui WhatsApp bagi menjawab pertanyaan.</label>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+                        <button type="reset" class="btn btn-outline">Set Semula</button>
+                        <button type="submit" class="btn btn-whatsapp">Hantar Pertanyaan Melalui WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" style="background: white; border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soalan Lazim (FAQ)</h2>
+                <p>Jawapan kepada persoalan lazim mengenai pembelian kereta PROTON bersama Aliya.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Berapakah harga rasmi kereta PROTON?</span>
+                        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Harga kereta PROTON berbeza mengikut model dan varian (Standard, Executive, Premium, Flagship). Anda boleh merujuk senarai model di atas atau terus hubungi Aliya untuk mendapatkan sebut harga rasmi terkini atas jalan (OTR).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimanakah cara untuk mengira anggaran ansuran bulanan?</span>
+                        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Anda boleh menggunakan Kalkulator Anggaran Ansuran yang disediakan di laman ini dengan memasukkan harga kereta, deposit, tempoh pinjaman dan kadar faedah indikatif untuk mendapatkan anggaran bulanan dengan cepat.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Adakah kalkulator ini menjamin kelulusan pinjaman bank?</span>
+                        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tidak. Simulasi kewangan ini adalah untuk rujukan perancangan awal sahaja. Kelulusan pembiayaan tertakluk sepenuhnya kepada penilaian institusi kewangan (bank) berdasarkan rekod kredit, pendapatan dan dokumen sokongan anda.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bolehkah saya membuat temujanji pandu uji (test drive)?</span>
+                        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ya, anda boleh mengatur temujanji pandu uji untuk model pilihan dengan menghubungi Aliya melalui WhatsApp untuk menetapkan masa dan lokasi yang sesuai.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimanakah cara untuk menghubungi Aliya?</span>
+                        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Anda boleh menekan mana-mana butang "Hubungi Aliya" atau ikon WhatsApp terapung di sudut bawah kanan halaman ini untuk terus berhubung secara peribadi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: linear-gradient(135deg, #0052CC 0%, #003A99 100%); color: white; text-align: center; padding: 5rem 0;">
+        <div class="container" style="max-width: 800px;">
+            <h2 style="color: white; font-size: clamp(2rem, 3.5vw, 2.6rem); margin-bottom: 1rem;">Kereta Mana Yang Paling Sesuai Untuk Anda?</h2>
+            <p style="color: #CBD5E1; font-size: 1.1rem; margin-bottom: 2rem;">
+                Semak model, bandingkan harga dan berbincang dengan Aliya sebelum membuat keputusan pembelian.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://wa.me/60123456789?text=Assalamualaikum%20Aliya,%20saya%20ingin%20berbincang%20tentang%20pilihan%20kereta%20PROTON." class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp Aliya Sekarang</a>
+                <a href="#calculator" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.3);">Kira Anggaran Ansuran</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-wrapper" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                        <img src="Proton-Logo.png" alt="Logo Perodua" style="height: 60px; width: auto; object-fit: contain;">
+                        <div class="logo-text">
+                            <h1 style="color: white; margin: 0; font-size: 20px; font-weight: bold;">PROTON</h1>
+                            <span style="color: #94A3B8; font-size: 15px;">Sales Advisor • Aliya</span>
+                        </div>
+                    </div>
+                    <p>
+                        Halaman maklumat jualan kenderaan rasmi kendalian Sales Advisor PERODUA yang komited membantu anda mendapatkan maklumat telus, sebut harga dan panduan pembelian kenderaan berkualiti.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#hero">Utama</a></li>
+                        <li><a href="#models">Model Kereta</a></li>
+                        <li><a href="#compare">Perbandingan</a></li>
+                        <li><a href="#calculator">Kalkulator</a></li>
+                        <li><a href="#promotion">Promosi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Hubungi</h4>
+                    <ul>
+                        <li><a href="https://wa.me/60123456789" target="_blank" rel="noopener">WhatsApp Aliya</a></li>
+                        <li><a href="#enquiry">Borang Pertanyaan</a></li>
+                        <li><a href="#faq">Soalan Lazim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Aliya - Sales Advisor PROTON Malaysia. Hak Cipta Terpelihara.</p>
+                <p>Maklumat harga dan spesifikasi tertakluk kepada pengesahan semasa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Controls -->
+    <div class="floating-controls">
+        <a href="https://wa.me/60123456789?text=Assalamualaikum%20Aliya,%20saya%20ingin%20bertanya%20tentang%20kereta%20PROTON." class="float-btn float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        </a>
+        <button class="float-btn float-top" id="back-to-top" aria-label="Kembali ke atas">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 15l7-7 7 7"/></svg>
+        </button>
+    </div>
+
+    <!-- Modal Detail Model -->
+    <div class="modal-overlay" id="model-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div id="modal-content">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data model PROTON Malaysia rasmi (2026)
+        const protonModels = [
+            {
+                id: 'saga',
+                name: 'PROTON Saga',
+                category: 'sedan',
+                image: 'saga.jpeg',
+                startingPrice: 34800,
+                seats: 5,
+                transmission: 'Auto / Manual',
+                variants: [
+                    { name: 'Standard MT', price: 34800 },
+                    { name: 'Standard AT', price: 38800 },
+                    { name: 'Premium AT', price: 44800 }
+                ],
+                features: ['Enjin 1.3L VVT', 'Kabin Luas & Selesa', 'Sistem Keselamatan ABS/EBD', 'Ketersediaan Eco Drive Assist'],
+                description: 'Sedan pilihan utama rakyat Malaysia yang menawarkan penjimatan bahan api cemerlang, keselesaan ruang dan kebolehpercayaan tinggi.'
+            },
+            {
+                id: 'persona',
+                name: 'PROTON Persona',
+                category: 'sedan',
+                image: 'persona.jpg',
+                startingPrice: 46800,
+                seats: 5,
+                transmission: 'CVT Auto',
+                variants: [
+                    { name: 'Standard CVT', price: 46800 },
+                    { name: 'Executive CVT', price: 53800 },
+                    { name: 'Premium CVT', price: 58800 }
+                ],
+                features: ['Enjin 1.6L VVT', 'Ruang Boot 510 Liter', 'Skrin Infotainment Sesentuh', 'Kawalan Kestabilan Elektronik'],
+                description: 'Sedan keluarga bergaya dengan ruang bagasi luas serta pemanduan stabil di lebuh raya.'
+            },
+            {
+                id: 's70',
+                name: 'PROTON S70',
+                category: 'sedan',
+                image: 'S71.jpg',
+                startingPrice: 73800,
+                seats: 5,
+                transmission: '7-Speed DCT',
+                variants: [
+                    { name: 'Executive', price: 73800 },
+                    { name: 'Premium', price: 79800 },
+                    { name: 'Flagship', price: 89800 },
+                    { name: 'Flagship X', price: 94800 }
+                ],
+                features: ['Enjin 1.5L Turbo', 'ADAS Keselamatan Aktif', 'Reka Bentuk Eksekutif', 'Ketersediaan Sunroof (Flagship X)'],
+                description: 'Sedan segmen C premium dengan teknologi pemanduan canggih, keselesaan kabin kelas atas dan prestasi turbo berkuasa.'
+            },
+            {
+                id: 'x50',
+                name: 'PROTON X50',
+                category: 'suv',
+                image: 'x50.jpg',
+                startingPrice: 86300,
+                seats: 5,
+                transmission: '7-Speed DCT',
+                variants: [
+                    { name: 'Standard', price: 86300 },
+                    { name: 'Executive', price: 93300 },
+                    { name: 'Premium', price: 101800 },
+                    { name: 'Flagship', price: 113300 }
+                ],
+                features: ['Enjin 1.5L TGDi Turbo', 'BKS Pintar (Voice Command)', 'Kamera 360 Darjah', 'Bilik Pameran Bergerak'],
+                description: 'SUV kompak paling popular di Malaysia dengan reka bentuk sporty, sambungan pintar dan pemanduan dinamik.'
+            },
+            {
+                id: 'x70',
+                name: 'PROTON X70',
+                category: 'suv',
+                image: 'x70.jpeg',
+                startingPrice: 98800,
+                seats: 5,
+                transmission: '7-Speed DCT',
+                variants: [
+                    { name: 'Standard', price: 98800 },
+                    { name: 'Executive', price: 110800 },
+                    { name: 'Premium', price: 119800 },
+                    { name: 'X-Premium', price: 126800 }
+                ],
+                features: ['Tempat Duduk Kulit Nappa', 'Enjin TGDi Berprestasi Tinggi', 'ADAS Tahap 2', 'Kabin Luas & Senyap'],
+                description: 'SUV segmen C mewah yang menawarkan keselesaan kelas pertama, kemasan premium dan keselamatan menyeluruh.'
+            },
+            {
+                id: 'x90',
+                name: 'PROTON X90',
+                category: 'suv',
+                image: 'x90.jpeg',
+                startingPrice: 123800,
+                seats: 6,
+                transmission: '48V EMS + 7-Speed DCT',
+                variants: [
+                    { name: 'Standard', price: 123800 },
+                    { name: 'Executive', price: 130800 },
+                    { name: 'Premium', price: 144800 },
+                    { name: 'Flagship', price: 152800 }
+                ],
+                features: ['Mild Hybrid 48V EMS', 'Kapasiti 6 Tempat Duduk', 'Penghawa Dingin Multi-Zone', 'Sistem Keselamatan Komprehensif'],
+                description: 'SUV flagship 6 tempat duduk yang menggabungkan teknologi hibrid moden, ruang keluarga luas dan kemewahan unggul.'
+            }
+        ];
+
+        // Format currency helper
+        function formatRM(val) {
+            return 'RM ' + val.toLocaleString('en-MY', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+        }
+
+        // Render Model Cards
+        function renderModels(filter = 'all') {
+            const container = document.getElementById('models-container');
+            container.innerHTML = '';
+
+            const filtered = filter === 'all' ? protonModels : protonModels.filter(m => m.category === filter);
+
+            filtered.forEach(model => {
+                // Calculate estimated monthly installment for 9 years at 3.2% flat rate
+                const loanAmount = model.startingPrice * 0.9; // 90% loan
+                const totalInterest = loanAmount * 0.032 * 9;
+                const monthly = Math.round((loanAmount + totalInterest) / 108);
+
+                const card = document.createElement('div');
+                card.className = 'model-card';
+                card.innerHTML = `
+                    <div class="model-image-wrapper">
+                        <span class="model-badge-tag">${model.category.toUpperCase()}</span>
+                        <img src="${model.image}" alt="${model.name}" loading="lazy">
+                    </div>
+                    <div class="model-body">
+                        <div class="model-title-row">
+                            <h3>${model.name}</h3>
+                            <div class="model-price">
+                                <span>Harga Bermula</span>
+                                <strong>${formatRM(model.startingPrice)}</strong>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">${model.description}</p>
+                        
+                        <ul class="model-features-list">
+                            ${model.features.slice(0, 4).map(f => `<li><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>${f}</li>`).join('')}
+                        </ul>
+
+                        <div class="installment-preview">
+                            <span>Anggaran Ansuran:</span>
+                            <strong>${formatRM(monthly)} /bulan*</strong>
+                        </div>
+
+                        <div class="model-card-actions">
+                            <button class="btn btn-outline" onclick="openModelModal('${model.id}')" style="font-size: 0.85rem; padding: 0.6rem;">Lihat Butiran</button>
+                            <a href="https://wa.me/60123456789?text=${encodeURIComponent('Assalamualaikum Aliya, saya berminat untuk mengetahui lebih lanjut tentang ' + model.name + '. Boleh bantu saya dengan sebut harga dan anggaran ansuran bulanan?')}" class="btn btn-whatsapp" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 0.6rem;">Tanya Aliya</a>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Render Comparison Table
+        function renderComparisonTable() {
+            const tbody = document.getElementById('comparison-tbody');
+            tbody.innerHTML = '';
+
+            protonModels.forEach(model => {
+                const loanAmount = model.startingPrice * 0.9;
+                const totalInterest = loanAmount * 0.032 * 9;
+                const monthly = Math.round((loanAmount + totalInterest) / 108);
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td><strong>${model.name}</strong></td>
+                    <td>${model.category.toUpperCase()}</td>
+                    <td><strong style="color: var(--proton-blue);">${formatRM(model.startingPrice)}</strong></td>
+                    <td>${model.seats} Orang</td>
+                    <td>${model.transmission}</td>
+                    <td><strong>${formatRM(monthly)}</strong></td>
+                    <td>
+                        <a href="https://wa.me/60123456789?text=${encodeURIComponent('Assalamualaikum Aliya, saya ingin perbandingan terperinci untuk ' + model.name)}" class="btn btn-whatsapp" target="_blank" rel="noopener" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Bincang</a>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Populate Select Dropdowns for Models
+        function populateModelSelects() {
+            const calcSelect = document.getElementById('calc-model');
+            const eqSelect = document.getElementById('eq-model');
+
+            if (calcSelect) calcSelect.innerHTML = '';
+            if (eqSelect) eqSelect.innerHTML = '';
+
+            protonModels.forEach(m => {
+                const opt1 = document.createElement('option');
+                opt1.value = m.id;
+                opt1.textContent = `${m.name} (Dari ${formatRM(m.startingPrice)})`;
+                calcSelect.appendChild(opt1);
+
+                const opt2 = document.createElement('option');
+                opt2.value = m.name;
+                opt2.textContent = `${m.name} (Dari ${formatRM(m.startingPrice)})`;
+                eqSelect.appendChild(opt2);
+            });
+        }
+
+        // Modal Handler
+        function openModelModal(modelId) {
+            const model = protonModels.find(m => m.id === modelId);
+            if (!model) return;
+
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = `
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <img src="${model.image}" alt="${model.name}" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                    <h2>${model.name}</h2>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">${model.description}</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--primary);">Senarai Varian & Harga (Indikatif)</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        ${model.variants.map(v => `
+                            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0.75rem; background: var(--bg-light); border-radius: var(--radius-sm); font-size: 0.9rem;">
+                                <span>${v.name}</span>
+                                <strong>${formatRM(v.price)}</strong>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--primary);">Ciri Utama</h4>
+                    <ul style="list-style: disc; padding-left: 1.2rem; font-size: 0.9rem; color: var(--text-muted); display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem;">
+                        ${model.features.map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                </div>
+                <div style="text-align: center;">
+                    <a href="https://wa.me/60123456789?text=${encodeURIComponent('Assalamualaikum Aliya, saya berminat dengan ' + model.name + '. Boleh berikan sebut harga terperinci?')}" class="btn btn-whatsapp" target="_blank" rel="noopener" style="width: 100%;">Tanya Aliya Mengenai Model Ini</a>
+                </div>
+            `;
+
+            document.getElementById('model-modal').classList.add('active');
+        }
+
+        // Calculator Logic
+        function calculateFinance() {
+            const modelId = document.getElementById('calc-model').value;
+            const model = protonModels.find(m => m.id === modelId) || protonModels[2]; // Default S70
+
+            const salary = parseFloat(document.getElementById('calc-salary').value) || 0;
+            const commitment = parseFloat(document.getElementById('calc-commitment').value) || 0;
+            const deposit = parseFloat(document.getElementById('calc-deposit').value) || 0;
+            const tenureYears = parseInt(document.getElementById('calc-tenure').value) || 9;
+            const annualRate = parseFloat(document.getElementById('calc-rate').value) || 3.2;
+
+            const loanAmount = Math.max(0, model.startingPrice - deposit);
+            const totalMonths = tenureYears * 12;
+            const totalInterest = loanAmount * (annualRate / 100) * tenureYears;
+            const monthlyInstallment = Math.round((loanAmount + totalInterest) / totalMonths);
+
+            const remainingBalance = salary - commitment - monthlyInstallment;
+            const dsr = salary > 0 ? Math.round(((commitment + monthlyInstallment) / salary) * 100) : 0;
+
+            document.getElementById('res-installment').textContent = formatRM(monthlyInstallment);
+            document.getElementById('res-balance').textContent = formatRM(remainingBalance);
+            document.getElementById('res-dsr').textContent = dsr + '%';
+
+            const healthContainer = document.getElementById('res-health-container');
+            if (dsr <= 40) {
+                healthContainer.innerHTML = '<span class="health-badge health-good">Kewangan Sangat Selesa</span>';
+            } else if (dsr <= 65) {
+                healthContainer.innerHTML = '<span class="health-badge health-warning">Tahap Sederhana • Semak Bajet</span>';
+            } else {
+                healthContainer.innerHTML = '<span class="health-badge health-danger">Komitmen Tinggi • Risiko Bank</span>';
+            }
+        }
+
+        // Event listeners on DOM Load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderModels('all');
+            renderComparisonTable();
+            populateModelSelects();
+            calculateFinance();
+
+            // Filter Tabs
+            document.querySelectorAll('.filter-tab').forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                    e.target.classList.add('active');
+                    renderModels(e.target.getAttribute('data-filter'));
+                });
+            });
+
+            // Calculator Inputs Listeners
+            ['calc-model', 'calc-salary', 'calc-commitment', 'calc-deposit', 'calc-tenure', 'calc-rate'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.addEventListener('input', calculateFinance);
+            });
+
+            // Calculator WhatsApp button
+            document.getElementById('calc-whatsapp-btn').addEventListener('click', () => {
+                const modelId = document.getElementById('calc-model').value;
+                const model = protonModels.find(m => m.id === modelId);
+                const salary = document.getElementById('calc-salary').value;
+                const installment = document.getElementById('res-installment').textContent;
+                const msg = `Assalamualaikum Aliya, saya telah membuat pengiraan untuk ${model ? model.name : 'PROTON'}. Gaji bersih saya RM${salary} dan anggaran ansuran adalah ${installment}. Boleh bantu saya semak kelayakan?`;
+                window.open(`https://wa.me/60123456789?text=${encodeURIComponent(msg)}`, '_blank');
+            });
+
+            // Modal Close handlers
+            document.getElementById('modal-close-btn').addEventListener('click', () => {
+                document.getElementById('model-modal').classList.remove('active');
+            });
+            document.getElementById('model-modal').addEventListener('click', (e) => {
+                if (e.target === document.getElementById('model-modal')) {
+                    document.getElementById('model-modal').classList.remove('active');
+                }
+            });
+
+            // FAQ Accordion
+            document.querySelectorAll('.faq-question').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const item = btn.parentElement;
+                    const isActive = item.classList.contains('active');
+                    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+
+            // Mobile Navigation Toggle
+            const hamburger = document.getElementById('hamburger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            hamburger.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+
+            // Sticky Header & Back to Top scroll behavior
+            const header = document.getElementById('header');
+            const backToTop = document.getElementById('back-to-top');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                if (window.scrollY > 400) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Dynamic Footer Year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Enquiry Form Submission to WhatsApp
+            document.getElementById('enquiry-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('eq-name').value;
+                const phone = document.getElementById('eq-phone').value;
+                const model = document.getElementById('eq-model').value;
+                const employment = document.getElementById('eq-employment').value;
+                const salary = document.getElementById('eq-salary').value;
+                const inquiryType = document.getElementById('eq-inquiry-type').value;
+                const message = document.getElementById('eq-message').value;
+
+                const text = `Assalamualaikum Aliya, saya ingin membuat pertanyaan rasmi:\n\nNama: ${name}\nNo Telefon: ${phone}\nModel Pilihan: ${model}\nStatus Pekerjaan: ${employment}\nGaji Bersih: RM ${salary || 'Tidak dinyatakan'}\nJenis Pertanyaan: ${inquiryType}\nMesej: ${message || 'Tiada'}`;
+                
+                window.open(`https://wa.me/60123456789?text=${encodeURIComponent(text)}`, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
